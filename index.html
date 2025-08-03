@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bill Ostras - Acessível</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: sans-serif; margin: 0; background: #f4f9f8; line-height: 1.6; }
+    nav {
+      background: #006b6b;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+    }
+    nav a:focus, nav a:hover {
+      background: #004d4d;
+      border-radius: 5px;
+      outline: 2px solid #fff;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2, h3 {
+      color: #004d4d;
+    }
+    .menu-category {
+      margin-bottom: 40px;
+    }
+    .menu-item {
+      background: #e0f7f5;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    form input, form textarea, form button {
+      display: block; width: 100%; max-width: 500px;
+      margin-bottom: 12px;
+      padding: 12px;
+      font-size: 16px;
+    }
+    form button {
+      background: #006b6b; color: white; border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #004d4d;
+    }
+    footer {
+      background: #004d4d;
+      color: white;
+      text-align: center;
+      padding: 25px 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Menu principal">
+    <a href="#home">Início</a>
+    <a href="#menu">Cardápio</a>
+    <a href="#reserve">Reservas</a>
+    <a href="#contact">Contato</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Bem-vindo ao Restaurante Bill Ostras</h2>
+      <p>Rodovia Rio-Santos, Km 205, Praia de Itaguaré - Bertioga/SP</p>
+      <p>Desde 1999 oferecendo o melhor dos frutos do mar</p>
+    </section>
+
+    <section id="menu">
+      <h2>Cardápio Completo</h2>
+      <div class="menu-category">
+        <h3>Entradas</h3>
+        <div class="menu-item">Ostras Frescas - Dúzia Média - R$50,00</div>
+        <div class="menu-item">Camarão à dorê - Porção - R$140,00</div>
+        <div class="menu-item">Casquinha de Siri - R$24,00</div>
+      </div>
+      <div class="menu-category">
+        <h3>Pratos Principais</h3>
+        <div class="menu-item">Moqueca de Abadejo - Inteira - R$300,00</div>
+        <div class="menu-item">Filé de Robalo à Moda Bill - Inteiro - R$410,00</div>
+        <div class="menu-item">Filé Mignon com fritas - Para 2 Pessoas - R$130,00</div>
+      </div>
+      <div class="menu-category">
+        <h3>Adicionais</h3>
+        <div class="menu-item">Arroz Branco (G) - R$30,00</div>
+        <div class="menu-item">Farofa de Banana - R$35,00</div>
+        <div class="menu-item">Porção de Legumes - R$35,00</div>
+      </div>
+      <div class="menu-category">
+        <h3>Bebidas</h3>
+        <div class="menu-item">Cerveja Heineken (600ml) - R$20,00</div>
+        <div class="menu-item">Coca-Cola - R$8,00</div>
+        <div class="menu-item">Caipirinha Velho Barreiro - R$23,00</div>
+        <div class="menu-item">Suco de Laranja - R$15,00</div>
+      </div>
+    </section>
+
+    <section id="reserve">
+      <h2>Faça sua Reserva</h2>
+      <form action="https://formsubmit.co/seuemail@exemplo.com" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="date" name="data" required />
+        <input type="time" name="horario" required />
+        <input type="tel" name="telefone" placeholder="Telefone" required />
+        <textarea name="mensagem" placeholder="Observações"></textarea>
+        <button type="submit">Reservar</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contato</h2>
+      <p>Telefone: <a href="tel:+5513997831553">(13) 99783-1553</a></p>
+      <p>WhatsApp: <a href="https://wa.me/5513997831553" target="_blank">Clique aqui</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 1999 - 2025 Restaurante Bill Ostras. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
